@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: hsl(180, 52%, 96%);
+}
+.header{
+  background-image: url(file:///C:/Users/pc/Downloads/bg-header-desktop.svg);
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.worker{
+  padding:3px 25px;
+  margin:30px auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh / 5);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -3px 0 0 0  hsl(180, 8%, 52%) ;
+}
+ul{
+  list-style: none;
+  display: flex;
+}
+.b{
+  display: flex;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  align-self: center;
+  margin: 0 20px 0 0;
+}
+.skills{
+  min-width: 45%;
+  align-self: center;
+  justify-content: space-between;
+}
+.skills li{
+  font-size: 14px;
+  background-color: hsl(180, 29%, 50%);
+  padding:10px 15px ;
+  border-radius: 4px;
+  color:   hsl(180, 14%, 20%);
+  cursor: pointer;
+}
+.title{
+  font-size: 18px;
+  padding: 6px;
+  letter-spacing: 1px;
+}
+.top{
+  display: flex;
+  justify-content: baseline;
+}
+.top li{
+  font-size: 14px;
+}
+.bottom{
+  justify-content: space-between;
+}
+.bottom li{
+    font-size: 12px;
+    color: grey;
+}
+.new{
+  background-color: hsl(180, 29%, 50%);
+  padding: 0 12px;
+  border-radius: 8px;
+  color: white;
+  margin: 0 5px;
+}
+.featured{
+  padding: 0 12px;
+  background-color: hsl(180, 14%, 20%);
+  border-radius: 8px;
+  color: white;
+}
+.input{
+  width: 60%;
+  height: 50px;
+  border: 2px solid rgb(22, 10, 46);
+  border-radius: 5px;
+  margin: 50px auto;
+  outline: none;
+  background-color: white;
+  font-size: 12px;
+  align-items: center;
+  display: none;
+}
+.input span{
+  background-color: aquamarine;
+  padding: 4px;
+  color: white;
+  margin: 5px;
+}
+.clear{
+  position: absolute;
+    top: 31%;
+    left: 72%;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  background-color: white;
+  cursor: pointer;
+  display: none;
+}
+.clear:hover{
+  text-decoration-line: underline;
+}

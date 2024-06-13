@@ -1,0 +1,28 @@
+import './App.css';
+import { useRef, useState } from 'react';
+function App() {
+  let a =[`ali`,`allam`,`ammar`,`ahmed`,`yousef`,`yaser`,`mohamed`,`malek`]
+  let [state,setState] = useState(a)
+  let ref = useRef(null)
+  let b = []
+
+function change(){
+  a.forEach((e,index)=>{
+    if(e.length >= ref.current.value.length){
+      if(e.slice(0,+ref.current.value.length ) == ref.current.value.slice(0,+ref.current.value.length)){
+        b.push(e)
+      }
+    }
+    })
+  setState(b)
+}
+return(
+    <>
+    <input type='text' ref={ref} onChange={change}  />
+    {state.map((e)=>{
+      return(<div className='name' key={e}>{e}</div>)
+    })}
+    </>
+)
+}
+export default App;
